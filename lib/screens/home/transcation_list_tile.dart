@@ -10,7 +10,6 @@ class TransactionListTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Size screenSize = MediaQuery.of(context).size;
     final String time =
         DateFormat("dd MMM yyyy").format(DateTime.parse(transaction.time));
     final String _msg = transaction.money >= 0 ? 'Credited' : 'Debited';
