@@ -26,8 +26,6 @@ class _RegisterState extends State<Register> {
     );
 
     void _submit() async {
-      print(_email);
-      print(_password);
       if (!(_email.isEmpty || _password.isEmpty)) {
         setState(() {
           _isLoading = true;
